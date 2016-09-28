@@ -1,0 +1,29 @@
+{
+  "name": "broccoli-diffing-writer",
+  "version": "0.0.1",
+  "description": "Broccoli plugin that diffs its input for selective rebuilds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/",
+    "test:debug": "mocha --no-timeouts debug tests/"
+  },
+  "keywords": [
+    "broccoli"
+  ],
+  "author": "Zack Mulgrew",
+  "license": "MIT",
+  "dependencies": {
+    "broccoli-plugin": "^1.2.2",
+    "fs-tree-diff": "^0.5.3",
+    "heimdalljs-logger": "^0.1.7",
+    "rsvp": "^3.3.1",
+    "walk-sync": "^0.3.1"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.9",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-files": "^1.4.0",
+    "mocha": "^3.0.2"
+  }
+}
